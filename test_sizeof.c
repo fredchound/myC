@@ -2,7 +2,7 @@
 
 int main (void)
 {
-	
+
 	union u {
 		struct {
 			char reason_code;
@@ -43,12 +43,13 @@ int main (void)
 
 	struct ieee80211_mgmt *mgmt; 
 	
-	printf("size of char is %lu \n", sizeof(char));
-	printf("size of short is %lu \n", sizeof(short));
-	printf("size of the union is %lu \n", sizeof(*pu));
-	printf("size of the struct is %lu \n", sizeof(*mgmt) );
+	printf("size of char is %d \n", sizeof(char));
+	printf("size of short is %d \n", sizeof(short));
+	printf("size of the union is %d \n", sizeof(*pu));
+	printf("size of the struct is %d \n", sizeof(*mgmt) );
 	
+
+	printf("size of pointer is %d \n", sizeof(void*));
 	return 0;
-	
 
 } //end of main
